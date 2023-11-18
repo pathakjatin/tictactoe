@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Playfair+Display&family=Skranji&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    color: #fff;
+    font-family: 'Playfair Display', 'Croissant' , 'Skranji';
+}
+body{
+
+    background-image: url("arcade.webp");
+    background-attachment: fixed;
+    background-clip: cover;
+    background-size: 100% 100%;
+}
+h1{
+    font-weight: 500;
+    cursor: pointer;
+}
+header{
+    padding: 25px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn41-43 {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    }
+    .btn-43 {
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+    color: white;
+    }
+    .btn-43:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    }
+    .btn-43:hover {
+    color: rgb(0, 0, 0);
+    }
+    .btn-43:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+    }
+    .gameContainer{
+        padding: 110px 0px 0px 85px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;    
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .box{
+        background-color: #fff;
+        border: 2px solid black;
+        width: 12vw;
+        height: 17vh;
+        font-size: 80px;
+        text-align: center;
+    }
+    .box:hover{
+        background-color: grey;
+        transition: all 0.2s ease-in 0s;
+    }
+    .boxtext{
+        color: #09fcf9;
+    }
+    h2{
+        text-decoration: underline wavy white;
+    }
+    p{
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    .turn-text{
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        p{
+            font-size: 1.5em;
+        }
+    }
+    .reset{
+        background-color: aquamarine;
+        padding: 12px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 12px;
+        color: black;
+    }
+    .reset:hover{
+        cursor: pointer;
+        transition: all 0.4s ease-in 0s;
+        background-color: rgba(12, 82, 58,0.9);
+        color: #fff;
+    }
+    .rules{
+        filter: brightness(120%);
+    }
+    .celeb{
+        width: 0px;
+        height: 150px;
+    }
+    @media (max-width:900px){
+        .box{
+            width: 12vw;
+            height: 12vh;
+            font-size: 55px;
+        }
+    }
+    @media (max-width:700px){
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+    }
