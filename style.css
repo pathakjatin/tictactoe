@@ -124,6 +124,17 @@ header{
         width: 0px;
         height: 150px;
     }
+    @media (max-width:1000px){
+        .info{
+            padding-top: 25px;
+        }
+        .container{
+            justify-content: center;
+            align-content: flex-start;
+            position: relative;
+            right: 100px;
+        }
+    }
     @media (max-width:900px){
         .box{
             width: 12vw;
@@ -135,5 +146,13 @@ header{
         .box{
             width: 100px;
             height: 100px;
+        }
+    }
+    @media (max-width:500px){
+        .celeb{
+            width: 180px;
+        }
+        .container{
+            right: 34px;
         }
     }
