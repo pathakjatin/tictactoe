@@ -149,9 +149,6 @@ header{
         }
     }
     @media (max-width:500px){
-        .celeb{
-            width: 180px;
-        }
         .container{
             right: 34px;
         }
